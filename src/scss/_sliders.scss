@@ -1,0 +1,127 @@
+/* Slider Brends*/
+//////////////////////////////
+
+/***********общие стили*************/
+
+.slider__title {
+  @extend %slider__title;
+}
+
+
+.slider__list {
+  background-color: #f8f8f8;
+  height: 150px;
+}
+
+.swiper-container {
+  @extend %swiper-container;
+}
+
+.swiper-wrapper {
+  width: 92%;
+  background-color: #f8f8f8;
+  padding-top: 16px;
+}
+
+.swiper-wrapper .swiper-slide {
+  height: 72px;
+  width: 240px;
+  background: #ffffff;
+  border: 1px solid #eaeaea;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 16px;
+  padding-left: 16px;
+}
+
+.slider__list--2 {
+  height: 280px;
+
+  .swiper-container--2 {
+    height: 260px;
+    font-size: 1.15em;
+    font-family: 'TT LakesM', serif;
+
+    .swiper-slide {
+      height: 160px;
+      display: flex;
+      padding: 16px;
+      
+      .slider__text {
+        align-self: flex-start;
+      }
+
+      .slider__button {
+        align-self: flex-end;
+      }
+    }
+  }
+}
+
+.slider__list--3 {
+  height: 290px;
+}
+
+.swiper-container--3 {
+
+  height: 290px;
+
+  .swiper-slide {
+    height: 200px;
+    
+    padding: 16px;
+    
+    flex-wrap: wrap;
+
+    
+    .slider__item {
+      margin: 0;
+      padding-top: 16px;
+      color: $text-color--gray;
+      width: 100%;
+      font-size: $font-size--small;
+
+      &:first-child {
+        padding-top: 0px;
+      }
+    }
+
+
+
+
+  }
+}
+
+.slider__text {
+  width: 100%;
+  padding-top: 4px;
+}
+
+
+
+.swiper-container .swiper-pagination-bullet {
+  margin: 100px;
+  background-color: #dddddd;
+  width: 12px;
+  height: 12px;
+}
+
+#btn {
+  display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

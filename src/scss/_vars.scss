@@ -1,0 +1,38 @@
+/////////**** Переменные*///////
+$сolor-main:#FFFFFF;
+$сolor-secondary:#F8F8F8;
+$text-color--main:#1B1C21;
+$text-color--gray:#7E7E82;
+$border-color--gray:#EAEAEA;
+$color-main--1366:#F2F2F2;
+$color-button:#FF3E79;
+$color-blue:#D9FFF5;
+$font-size--small:14px;
+$font-size--h1:2em;
+
+
+
+////////***Шаблоны****/////////
+
+%slider__title{
+ font-family: 'TT LakesR', serif;
+ text-transform: uppercase;
+    font-size: 1.15em;
+    color: $text-color--gray;
+    font-style: normal;
+    font-weight: normal;
+    background-color: $сolor-main;
+    width: auto;
+    padding:16px;
+    height: auto;
+    border-top:solid 1px $color-blue;
+    margin: 0 -16px;
+//     
+}
+
+%swiper-container{
+    width: 100%;
+    height: 130px;
+    padding-bottom: 0px;
+    
+}

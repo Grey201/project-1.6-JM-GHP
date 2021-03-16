@@ -1,0 +1,273 @@
+
+
+
+////////////общие стили для всех модальных окон
+.title__text--window{
+  font-size: 1.7em;
+}
+.window-container{
+  padding: 24px 16px;
+  display: flex;
+  flex-direction: column;
+  .button--oval{
+    transform: none;
+    align-self:flex-end;
+  }
+}
+
+.field{
+  height: 48px;
+  border-radius: 8px;
+  border:  1px solid $border-color--gray;
+  width: 93%;
+  padding-left: 16px;
+  color:#B5B6BC;
+  font-size: 1.15em;
+  font-family: "TT LakesM";
+  
+}
+
+.text-form{
+  font-family: "TT LakesM";
+  padding: 16px 0 18px 0;
+  color:$text-color--gray;
+  line-height: 16px;
+  span{
+    color:$color-button;
+  }
+}
+
+.modal-window{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  opacity: 0.96;
+  background-color:$сolor-main;
+  z-index:10;
+  overflow-y: auto;
+  display: flex;
+ }
+
+
+.modal-menu{ 
+  
+  
+  height: 700px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  
+}
+
+// ******************mw-1
+
+
+.top-menu {
+  margin: 0;
+  box-shadow: 2px -40px 100px -10px #00000033;
+  width: 100%;
+  padding: 16px;
+  justify-content: space-between;
+  
+
+.header-menu{
+    
+    height: 12%;
+    padding: 0;
+    
+    
+}
+
+
+  button {
+    padding: 0;
+  }
+
+  .main-menu__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 0;
+    margin: 0;
+
+   
+    
+
+    .main-menu__link {
+      color: $text-color--main;
+      line-height: 24px;
+     
+    }
+    .main-menu__link:hover {
+      color: $text-color--gray;
+    }
+  }
+  .main-menu__item {
+      padding: 12px 0px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+
+      &:before {
+        display: inline-block;
+        content: "";
+        margin-left: 0px;
+        width: 4px;
+        background-color: #41F6D7;
+        height: 32px;
+        vertical-align: middle;
+        opacity: 0;
+        border-radius: 0 15px 15px 0px;
+        margin-right: 16px;
+        margin-left: -16px;
+        
+        
+
+      }
+      &:hover::before{
+        opacity: 1;
+        }
+    }
+  .footer-menu{
+    
+    
+    
+color:$text-color--main;
+width: 100%;
+flex-wrap: wrap;
+
+justify-content: space-between;
+
+
+      .button{
+      display:flex;
+   
+      }
+
+      a{
+        color:$text-color--main;
+        font-size: 1.15em;
+        font-family: 'TT LakesM';
+      }
+      .contacts__link:last-child a{
+        font-size: 24px;
+        font-family: 'TT LakesB';
+        
+    }
+    
+    .contacts__link a:hover,
+    .languages__link a:hover {
+      color: $text-color--gray;
+    }
+  }
+}
+
+
+.contacts{
+    padding:0;
+    margin: 0;
+
+}
+.contacts__link{
+    padding-top: 12px;
+    
+    
+}
+
+.languages{
+    display: flex;
+margin: 0;
+padding-top: 8px;
+padding-left: 0;
+}
+.languages__link{
+    padding: 0px 7px 0px 0;
+}
+
+.window-close{
+  top:100%;
+}
+
+/////////////////////////////отступы
+.indent{
+
+  margin-bottom: 16px;
+  
+  }
+.indent-16{
+  margin-left: -16px;
+
+}
+
+
+  @media(min-width:768px) {
+  
+    #mw-2, #mw-3{
+      justify-content: flex-end;
+      
+      
+    } 
+    
+  .modal-menu{
+    width: 440px;
+    border-left: 1px solid $color-blue;
+    height: 1024px;
+    
+    
+  }
+  .top-menu{
+    width: 320px;
+    padding: 20px 24px;
+    .main-menu{
+      &__item{
+        &:before{
+          margin-left: -24px;
+        }
+      }
+      }
+
+  }
+  .window-container{
+    padding-top: 0px;
+  }
+  
+
+  #closeChat, #closeCall{
+    transform: translate(-80px, 55px);
+    
+  }
+  .footer-menu{
+    
+    align-self:flex-end;
+  }
+  /////////////////////////////отступы
+  .indent-top{
+    margin-top: -20px;
+  }
+  }
+  @media(min-width:1366px) {
+  
+    #mw-1{
+      width: 35%;
+      height: auto;
+      background-color:$color-main--1366;
+    }
+    .top-menu{
+      box-shadow: 2px -40px 0px -10px #00000033;
+      width: auto;
+      padding-top: 45px;
+      .header-menu{
+        background-color:inherit;
+      }
+    }
+.modal-menu{
+  height: 850px;
+}
+.indent-16{
+  margin-left: 18px;
+}
+
+
+
+  }
